@@ -14,25 +14,26 @@ _This project will imitate dispatching software that I've used in the past when 
 ## MVP Features
 * Basic functionality will be to just have a site that connects to Firebase and allows you to create, read, update, and delete the following: customers, work orders, addresses, technicians.
 * Include the ability to assign jobs to each technician and to rearrange/reassign as needed.
+* Be able to search by customer name and/or address.
 
 ## Future features
-_Features that would make this an awesome dispatching software._
-* Implameting seperate logins for dispatcher, technicians, supervisor/admin, and customer.
+_Features that would make this an awesome dispatching software. In no particular order._
+* Implementing separate logins for dispatcher, technicians, supervisor/admin, and customer.
 * Integrate google maps api to provide distance from one job to the next on the technicians schedule.
 * Allow customers to login and create new work orders for there business/house/or additional properties they own.
 * Start/Stop function for the work orders.
-* Alert system that will check in with the tech 15 mintues prior to the estimated completed time has passed to make sure they are running on schedule.
-* Inventory system for technicians vans (which would update if they specificed they used a part on a job)
+* Alert system that will check in with the tech 15 minutes prior to the estimated completed time has passed to make sure they are running on schedule.
+* Inventory system for technicians vans (which would update if they specified they used a part on a job)
 * Alerts sent to dispatcher/technician if critical inventory is getting low or has run out.
-* Suggested schedule for technicians (based on distance from home/previous job, technicians senority, technicians skills, and skills needed for the job)
+* Suggested schedule for technicians (based on distance from home/previous job, technicians seniority, technicians skills, and skills needed for the job)
 * Parts under warranty listed on the unit page.
 * Work orders still under warranty have an extra notification.
 * Easier quote generator for needed/recommended repairs.
 * Automatic alert to dispatch if customer approves quote and wants the tech to do it same day or to schedule for a future date.
 * Automatic work order created when new quote is submitted and alert is sent to the office if approved.
-* If customer signs up for a maintenance plan then the maintenance work order will automatically generate and send an email reminder to the customer to call and get it scheduled at the specificed interval when the agreement was made and have an alert in the office that the maintenance is due.
-* If a recall or alert goes out for a unit be able to effectivly search for those units and flag them.
-* Implamete VoIP calling features, so techs or office workers can click on a number to dial it.
+* If customer signs up for a maintenance plan then the maintenance work order will automatically generate and send an email reminder to the customer to call and get it scheduled at the specified interval when the agreement was made and have an alert in the office that the maintenance is due.
+* If a recall or alert goes out for a unit be able to effectively search for those units and flag them.
+* Implement VoIP calling features, so techs or office workers can click on a number to dial it.
 * Centralized area to check what parts are pending for work orders, that way its easy to see if something is due today and if doesn't arrive its easy to catch.
 * Additional features as I think of them.
 
@@ -45,10 +46,10 @@ _Features that would make this an awesome dispatching software._
 
 ## User Personas/Stories
 #### Customer:
-* Would like to have easy access to information related to the HVAC systems I own or I'm in charge of. 
-* Be able to edit incorrect or update information that relates to my account. 
-* Have the ability to submit work requests if my system stops working. 
-* Get automatic notices of maintenances I've signed up for. 
+* Would like to have easy access to information related to the HVAC systems I own or I'm in charge of.
+* Be able to edit incorrect or update information that relates to my account.
+* Have the ability to submit work requests if my system stops working.
+* Get automatic notices of maintenances I've signed up for.
 * See past work that has been performed on my system(s).
 * See any warranties that I have on my systems(s).
 
@@ -119,6 +120,7 @@ Work order
   – Bill to
   – Estimated time
   – Time Slot
+  - Assigned Technician
 
 Customer
   – Name
@@ -127,6 +129,7 @@ Customer
   – Maintenance (T/F)
   – Address
   – Work orders
+  - Preferred technician
 
 Employees
   – Name
@@ -144,7 +147,7 @@ Unit
   – Install date
   – Warranty info
   – Location
-  
+
 Address
   – Home owner/Business Name
   – Address
@@ -157,10 +160,16 @@ Address
 
 ## Process
 
+#### Sunday 5/5/2019
+_Realized that my project will probably need a good search component. Added this to the MVP. Also read an article on how to add <a href="https://hackernoon.com/add-keyboard-shortcuts-to-your-web-app-ba358016ff05">Keyboard Shortcuts</a> to your web app, might be useful for creating new customers, work orders, or starting a search with just a few key presses._
+
+#### Saturday 5/4/2019
+_Spent some time doing research on Moment.js and css modules. Started thinking about some layout options. Also thought that work orders will need an assigned technician variable and possibly adding a preferred technician variable to the customer data. I'm considering using npx create-react-app for this project, did some research into that._
+
 #### Friday 5/3/2019
-_Since this mostly a planning day the format for this entry will be a little different. I need to account for the time spent hour by hour so my instructors will know what I've been working on._
-* 8:00am to 9:00am - Was reading <a href="https://reactjs.org/docs/thinking-in-react.html">Think in React</a> and making README
-* 9:00am to 10:00am - Collaborated with a former coworker (who is still doing dispatching at my old company) on some future features that would make this project really awesome if I'm able to figure out how to implament them.
+_Since this is mostly a planning day the format for this entry will be a little different. I need to account for the time spent hour by hour so my instructors will know what I've been working on._
+* 8:00am to 9:00am - Read <a href="https://reactjs.org/docs/thinking-in-react.html">Think in React</a> and started making this README
+* 9:00am to 10:00am - Collaborated with a former coworker (who is still doing dispatching at my old company) on some future features that would make this project really awesome if I'm able to figure out how to implement them.
 * 10:00am to 11:00am - Small mental break after thinking up future features. Started working on User Stories.
 * 11:00am to 12:00pm - Continue working on User Stories.
 * 1200pm to 1:00pm - Lunch.
