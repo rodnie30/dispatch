@@ -6,7 +6,7 @@
 
 ## Description
 
-_This project will imitate dispatching software that I've used in the past when I used to work for HVAC companies. This will be an ongoing effort so please check the Process for future updates._
+_This project will imitate dispatching software that I've used in the past when I used to work for HVAC companies. This will be an ongoing effort so please check the Process section for future updates._
 
 ## Current Features
 * No features at this time, still in planning stage.
@@ -47,7 +47,7 @@ _Features that would make this an awesome dispatching software. In no particular
 ## User Personas/Stories
 #### Customer:
 * Would like to have easy access to information related to the HVAC systems I own or I'm in charge of.
-* Be able to edit incorrect or update information that relates to my account.
+* Be able to edit incorrect/update information that relates to my account.
 * Have the ability to submit work requests if my system stops working.
 * Get automatic notices of maintenances I've signed up for.
 * See past work that has been performed on my system(s).
@@ -72,7 +72,7 @@ _Features that would make this an awesome dispatching software. In no particular
 | Scenario | Response |
 | ---: | :---|
 | Goal:| Get through the day as efficiently as possible. Easy to use system with nothing to complicated so I can focus on the HVAC work that needs to be done. |
-| Pain points: | Calculating invoice totals if extra parts/services were provided. Letting the office know I'm behind which I'm in the middle of a job. |
+| Pain points: | Calculating invoice totals if extra parts/services were provided. Letting the office know I'm behind while I'm in the middle of a job. |
 | Circumstance: | System to log onto to track technicians time and whereabouts. |
 | Tech ability: | Basic web browsing knowledge. |
 | Devices: | Mobile/Tablet or Laptop |
@@ -159,6 +159,9 @@ Address
 ```
 
 ## Process
+
+#### Monday 5/6/2019
+_Made some minor fixes to the README._
 
 #### Sunday 5/5/2019
 _Realized that my project will probably need a good search component. Added this to the MVP. Also read an article on how to add <a href="https://hackernoon.com/add-keyboard-shortcuts-to-your-web-app-ba358016ff05">Keyboard Shortcuts</a> to your web app, might be useful for creating new customers, work orders, or starting a search with just a few key presses._
